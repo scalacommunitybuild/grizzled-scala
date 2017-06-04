@@ -22,7 +22,6 @@ ivyScala := ivyScala.value.map { _.copy(overrideScalaVersion = true) }
 
 autoCompilerPlugins := true
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked")
-bintrayPackageLabels := Seq("library", "grizzled", "scala")
 
 /* Wart Remover doesn't yet work with 2.12. Disabled for now.
 wartremoverErrors in (Compile, compile) ++= Seq(
